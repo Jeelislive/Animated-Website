@@ -137,8 +137,8 @@ nav h3 {
 	position: absolute;
 	height: 46vw;
 	width: 36vw;
-	right: 0;
-	top: 75vw;
+	right: 10%;
+	top: 70vw;
 }
 
 #hero1 {
@@ -597,13 +597,13 @@ nav h3 {
 	}
 
 	#page2 #gollo {
-		height: 50vh;
-		width: 50vh;
+		height: 30vh;
+		width: 30vh;
 		position: absolute;
 		border-radius: 50%;
 		background: linear-gradient(to top right, #ff2d03, #ff5c0b);
 		top: 30%;
-		left: 0;
+		left: 5%;
 		right: 0;
 		filter: blur(15px);
 		animation-name: golloo;
