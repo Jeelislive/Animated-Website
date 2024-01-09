@@ -4,15 +4,39 @@ const scroll = new LocomotiveScroll({
 });
 
 function page4Animation() {
-    var elemC = document.querySelector("#elem-container")
-    var fixedImage = document.querySelector("#fixed-image")
-    elemC.addEventListener("mouseenter", function () {
-        fixedImage.style.display = "block";
-    })
+    let elemC = document.querySelector("#elem-container")
+    let fixedImage = document.querySelector("#fixed-image")
+    let isImageDisplayed = false;
 
-    elemC.addEventListener("mouseleave", function () {
-        fixedImage.style.display = "none";
-    })
+    elemC.addEventListener("mouseover", function () {
+        if (!isImageDisplayed) {
+            fixedImage.style.display = "block";
+            isImageDisplayed = true;
+        }
+    });
+
+    elemC.addEventListener("mouseleave", function (event) {
+        // Check if the mouse is leaving the container or entering the fixed image
+        if (
+            !fixedImage.contains(event.relatedTarget) &&
+            !elemC.contains(event.relatedTarget)
+        ) {
+            fixedImage.style.display = "none";
+            isImageDisplayed = false;
+        }
+    });
+
+    fixedImage.addEventListener("mouseleave", function (event) {
+        // Check if the mouse is leaving the fixed image or entering the container
+        if (
+            !fixedImage.contains(event.relatedTarget) &&
+            !elemC.contains(event.relatedTarget)
+        ) {
+            fixedImage.style.display = "none";
+            isImageDisplayed = false;
+        }
+    });
+
 
     // let elems = document.querySelectorAll("#elem")
     // elems.addEventListener("mouseenter", function () {
@@ -31,7 +55,7 @@ function page4Animation() {
 }
 
 function swiperAnimation() {
-    var swiper = new Swiper(".mySwiper", {
+    let swiper = new Swiper(".mySwiper", {
         slidesPerView: "auto",
         centeredSlides: true,
         spaceBetween: 100,
@@ -42,10 +66,10 @@ function swiperAnimation() {
 
 function menuAnimation() {
 
-    var menu = document.querySelector("nav h3")
-    var full = document.querySelector("#full-scr")
-    var navimg = document.querySelector("nav img")
-    var flag = 0
+    let menu = document.querySelector("nav h3")
+    let full = document.querySelector("#full-scr")
+    let navimg = document.querySelector("nav img")
+    let flag = 0
     menu.addEventListener("click", function () {
         if (flag == 0) {
             full.style.top = 0
