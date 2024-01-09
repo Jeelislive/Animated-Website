@@ -127,18 +127,23 @@ nav h3 {
 	font-size: 3vw;
 	line-height: 3vw;
 	color: #868e96;
+	z-index: 99;
+	position: relative;
 }
 .center h1 {
 	font-size: 8vw;
 	line-height: 9vw;
 	text-align: center;
-	
+	z-index: 99;
+	position: relative;
 }
 
 #page1 #videolane h3{
+	position: relative;
 	text-align: center;
 	padding-top: 3vw;
 	font-size: 2.1vw;
+	z-index: 99;
 }
 
 #page1 video {
