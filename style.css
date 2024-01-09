@@ -46,7 +46,7 @@ body {
 }
 
 nav {
-	padding: 2vw 0vw;
+	padding: 2vw 2vw;
 	width: 100%;
 	display: flex;
 	position: relative;
@@ -138,7 +138,7 @@ nav h3 {
 	height: 46vw;
 	width: 36vw;
 	right: 0;
-	top: 35vw;
+	top: 75vw;
 }
 
 #hero1 {
@@ -470,7 +470,7 @@ nav h3 {
 	}
 
 	#page1 {
-		min-height: 100vh;
+		min-height: 150vh;
 		width: 100vw;
 		padding: 0 0vw;
 	}
@@ -485,8 +485,7 @@ nav h3 {
 	}
 
 	nav {
-		padding: 8vw 5vw;
-
+		padding: 6vw 4vw;
 		background-color: #efeae3;
 	}
 
@@ -527,8 +526,9 @@ nav h3 {
 		line-height: 6vw;
 	}
 	.center h1 {
-		font-size: 17vw;
-		line-height: 15vw;
+		padding: 4vw;
+		font-size: 12vw;
+		line-height: 10vw;
 		text-align: right;
 	}
 
@@ -589,10 +589,10 @@ nav h3 {
 	}
 
 	#page2 {
-		min-height: 130vh;
+		height: 100%;
 		width: 100%;
 		background-color: #efe9e3;
-		padding: 8vw 0;
+		padding: 18vw 0;
 		position: relative;
 	}
 
@@ -603,7 +603,7 @@ nav h3 {
 		border-radius: 50%;
 		background: linear-gradient(to top right, #ff2d03, #ff5c0b);
 		top: 30%;
-		left: 20%;
+		left: 0;
 		right: 0;
 		filter: blur(15px);
 		animation-name: golloo;
@@ -665,6 +665,7 @@ nav h3 {
 	}
 
 	#bottom-part2 {
+		margin-bottom: 12vw;
 		width: 80%;
 		position: relative;
 		z-index: 10;
@@ -680,14 +681,14 @@ nav h3 {
 	#bottom-part2 p {
 		font-weight: 200;
 		margin-top: 3vw;
+		margin-bottom: 8vw;
 		font-size: 5vw;
 	}
 
 	#page3 {
-		padding: 1vw 0;
-		min-height: 100vw;
+		padding-top: 30vw;
+		min-height: 100%;
 		width: 100%;
-		background-color: #efe9e3;
 		position: relative;
 	}
 
