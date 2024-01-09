@@ -455,7 +455,7 @@ nav h3 {
 	border-bottom-right-radius: 20px;
 }
 
-@media (max-width: 480px) {
+@media (max-width: 600px) {
 	html,
 	body {
 		height: 100%;
