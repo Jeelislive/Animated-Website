@@ -1,1 +1,16 @@
-.vercel
+{
+	"routes": [
+		{
+			"src": "/",
+			"dest": "./main-files/index.html"
+		},
+		{
+			"src": "/",
+			"dest": "contactMe.html"
+		},
+		{
+			"src": "/",
+			"dest": "./main-files/project.html"
+		}
+	]
+}
