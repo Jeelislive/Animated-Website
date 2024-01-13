@@ -66,12 +66,13 @@ function swiperAnimation() {
 
 function menuAnimation() {
 
-    let menu = document.querySelector("nav h3")
-    let full = document.querySelector("#full-scr")
-    let navimg = document.querySelector("nav img")
-    let flag = 0
+    var menu = document.querySelector("nav h3")
+    var full = document.querySelector("#full-scr")
+    var navimg = document.querySelector("nav img")
+    var flag = 0
     menu.addEventListener("click", function () {
         if (flag == 0) {
+            console.log("hyyy");
             full.style.top = 0
             navimg.style.opacity = 0
             flag = 1
@@ -96,4 +97,5 @@ function loaderAnimation() {
 swiperAnimation();
 page4Animation();
 menuAnimation();
+
 loaderAnimation();

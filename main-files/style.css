@@ -38,34 +38,33 @@ body {
 }
 
 #page1 {
-	min-height: 100vh;
+	min-height: 200vh;
 	width: 100%;
 	background-color: #efe9e3;
 	position: relative;
-	padding: 0 2vw;
 }
 
 nav {
-	
 	width: 100%;
 	display: flex;
 	position: relative;
 	align-items: center;
 	justify-content: space-between;
 	z-index: 100;
-	padding-bottom: 10vw;
 }
 
-nav img{
-    height: 15vw;
-	width:  20vw;
+nav img {
+	height: 10vw;
+	width: 20vw;
 }
 
 .nav-part2 {
+	padding: 3vw;
 	display: flex;
 	align-items: center;
 	gap: 1vw;
 }
+
 .nav-part2 h4 {
 	overflow: hidden;
 	padding: 10px 20px;
@@ -94,12 +93,14 @@ nav img{
 	bottom: 0;
 	border-radius: 0;
 }
+
 .nav-part2 h4 a {
 	color: black;
 	text-decoration: none;
 	position: relative;
 	z-index: 9;
 }
+
 .nav-part2 h4:hover a {
 	color: #fff;
 }
@@ -109,18 +110,17 @@ nav h3 {
 	left: 0;
 	right: 10%;
 	display: none;
-	
 }
 
 .center {
-	height: 65vh;
+	height: 75vh;
 	width: 100%;
-	/* background-color: orange; */
+	background-color: lightyellow;
 	display: flex;
 	align-items: flex-end;
 	justify-content: space-between;
 	border-bottom: 1px solid #0000003c;
-	padding-bottom: 2.5vw;
+	padding: 8vw 2vw;
 }
 .center h3 {
 	width: 45vw;
@@ -131,14 +131,14 @@ nav h3 {
 	position: relative;
 }
 .center h1 {
-	font-size: 8vw;
-	line-height: 9vw;
+	font-size: 5vw;
+	line-height: 6vw;
 	text-align: center;
 	z-index: 99;
 	position: relative;
 }
 
-#page1 #videolane h3{
+#page1 #videolane h3 {
 	position: relative;
 	text-align: center;
 	padding-top: 3vw;
@@ -156,30 +156,33 @@ nav h3 {
 .hero-shape {
 	position: absolute;
 	height: 46vw;
-	width: 36vw;
+	width: 46vw;
 	right: 10%;
-	top: 70vw;
+	top: 30%;
 }
 
 #hero1 {
 	height: 100%;
 	width: 100%;
-	background-color: #fe3b0d;
-	border-top-left-radius: 50%;
-	border-bottom-left-radius: 50%;
-	filter: blur(15px);
+	background-color: #fe410d;
+	border-radius: 50%;
 	position: absolute;
+	filter: blur(55px);
+	animation-name: anime2;
+	animation-duration: 3s;
+	animation-direction: alternate;
+	animation-timing-function: linear;
+	animation-iteration-count: infinite;
 }
 #hero2 {
 	height: 30vw;
 	width: 30vw;
 	background: linear-gradient(#fe3b0d, #fe410d);
 	border-radius: 50%;
-	filter: blur(20px);
 	position: absolute;
-	filter: blur(35px);
+	filter: blur(55px);
 	animation-name: anime2;
-	animation-duration: 5s;
+	animation-duration: 3s;
 	animation-direction: alternate;
 	animation-timing-function: linear;
 	animation-iteration-count: infinite;
@@ -190,7 +193,7 @@ nav h3 {
 	background: linear-gradient(#fe3b0d, #fe410d);
 	border-radius: 50%;
 	position: absolute;
-	filter: blur(35px);
+	filter: blur(55px);
 	animation-name: anime1;
 	animation-duration: 3s;
 	animation-direction: alternate;
@@ -297,7 +300,6 @@ nav h3 {
 
 #bottom-part2 img {
 	width: 100%;
-
 }
 
 #bottom-part2 p {
@@ -502,7 +504,8 @@ nav h3 {
 
 	nav img {
 		transition: all ease 0.4s;
-		height: 9vh;
+		height: 11vh;
+		width: 21vh;
 	}
 
 	nav {
@@ -549,7 +552,7 @@ nav h3 {
 	.center h1 {
 		padding: 4vw;
 		font-size: 12vw;
-		line-height: 10vw;
+		line-height: 11.5vw;
 		text-align: right;
 	}
 
@@ -909,54 +912,52 @@ nav h3 {
 		font-size: 9vw;
 	}
 
-	#loader{
+	#loader {
 		height: 100%;
 		width: 100%;
 		position: fixed;
 		top: 0;
 		z-index: 999;
-			background-color: black;
-			transition: all ease 0.9s;
-	display: flex;
-	align-items: center;
-	justify-content: center;
+		background-color: black;
+		transition: all ease 0.9s;
+		display: flex;
+		align-items: center;
+		justify-content: center;
 	}
 
-	
-#loader h1 {
-	font-size: 4vw;
-	color: transparent;
-	background: linear-gradient(to right, orange, orangered);
-	-webkit-background-clip: text;
-	position: absolute;
-	opacity: 0;
-	animation-name: load;
-	animation-duration: 1s;
-	animation-delay: 1s;
-	animation-timing-function: linear;
-}
-
-#loader h1:nth-child(2) {
-	animation-delay: 2s;
-}
-
-#loader h1:nth-child(3) {
-	animation-delay: 3s;
-}
-
-@keyframes load {
-	0% {
+	#loader h1 {
+		font-size: 4vw;
+		color: transparent;
+		background: linear-gradient(to right, orange, orangered);
+		-webkit-background-clip: text;
+		position: absolute;
 		opacity: 0;
+		animation-name: load;
+		animation-duration: 1s;
+		animation-delay: 1s;
+		animation-timing-function: linear;
 	}
-	10% {
-		opacity: 1;
-	}
-	90% {
-		opacity: 1;
-	}
-	100% {
-		opacity: 0;
-	}
-}
 
+	#loader h1:nth-child(2) {
+		animation-delay: 2s;
+	}
+
+	#loader h1:nth-child(3) {
+		animation-delay: 3s;
+	}
+
+	@keyframes load {
+		0% {
+			opacity: 0;
+		}
+		10% {
+			opacity: 1;
+		}
+		90% {
+			opacity: 1;
+		}
+		100% {
+			opacity: 0;
+		}
+	}
 }
