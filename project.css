@@ -226,6 +226,12 @@ p {
 		margin: 0;
 	}
 
+	#page1 {
+		width: 100%;
+		min-height: 200vh;
+		position: relative;
+	}
+
 	nav img {
 		transition: all ease 0.4s;
 		height: 11vh;
@@ -261,6 +267,8 @@ p {
 	}
 
 	.project-box {
+		position: relative;
+		width: 95%;
 		border-radius: 8px;
 		box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 		margin: 10px;
@@ -268,36 +276,33 @@ p {
 		text-align: center;
 		display: flex;
 		flex-direction: column;
+		align-content: center;
 		flex-wrap: wrap;
 	}
 
 	.project-box1 {
 		border: 8px outset rgb(37, 37, 37);
-		width: 70%;
-		left: 0%;
+		width: 100%;
 		margin: 40px;
+		align-self: center;
 	}
 
 	.project-box2 {
 		border: 8px outset rgb(37, 37, 37);
-		width: 70%;
-		align-self: flex-end;
+		width: 100%;
 		margin: 40px;
 	}
 
 	.project-box3 {
 		border: 8px outset rgb(37, 37, 37);
-		width: 70%;
+		width: 100%;
 		margin: 40px;
 	}
 
 	.project-box4 {
 		border: 8px outset rgb(37, 37, 37);
-		width: 70%;
-		align-self: flex-end;
+		width: 100%;
 		margin: 40px;
-		box-sizing: border-box;
-		text-decoration: none;
 	}
 
 	.project-box1 button a {
@@ -338,15 +343,16 @@ p {
 	}
 
 	#full-scr {
-		height: 100vh;
+		height: 100%;
 		width: 100%;
-		position: fixed;
+		/* position: fixed; */
 		background-color: #00000070;
 		top: -100%;
 		transition: all ease 0.5s;
 		z-index: 99;
 		left: 0;
 	}
+
 	#full-div1 {
 		height: 50%;
 		width: 100%;
@@ -359,7 +365,6 @@ p {
 		padding-right: 6vw;
 		padding-bottom: 2vw;
 		align-items: end;
-
 		border-bottom-left-radius: 20px;
 		border-bottom-right-radius: 20px;
 	}

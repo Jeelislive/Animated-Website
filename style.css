@@ -832,7 +832,7 @@ nav h3 {
 	}
 
 	#full-scr {
-		height: 100vh;
+		height: 100%;
 		width: 100%;
 		position: fixed;
 		background-color: #00000070;
