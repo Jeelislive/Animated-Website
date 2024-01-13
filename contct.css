@@ -207,27 +207,29 @@ p {
 }
 
 @media (max-width: 600px) {
-	html,
+html,
 	body {
 		height: 100%;
 		width: 100%;
-		margin: 0;
 	}
 
 	.main {
+		/* background-color: #000; */
 		width: 100%;
 		position: relative;
 		margin: 0;
 	}
 
 	#page1 {
-		height: 100%;
-		width: 100%;
-
-		display: flex;
-		flex-direction: column;
-		justify-content: space-between;
+		min-height: 150vh;
+		width: 100vw;
+		padding: 0 0vw;
 	}
+
+	nav h3 {
+		position: relative;
+	}
+
 	nav img {
 		transition: all ease 0.4s;
 		height: 11vh;
@@ -235,14 +237,13 @@ p {
 	}
 
 	nav {
-		padding: 6vw 4vw;
+		padding: 3vw 2vw;
 		background-color: #efeae3;
 	}
 
 	.nav-part2 {
 		display: none;
 	}
-
 	nav h3 {
 		display: block;
 		padding: 3vw 8vw;
@@ -257,9 +258,6 @@ p {
 		padding-right: 2vw;
 	}
 
-	nav h3 {
-		position: relative;
-	}
 
 	#page1 .top {
 		width: 100%;
@@ -274,6 +272,7 @@ p {
 		padding-top: 8vw;
 		width: 100%;
 		border-radius: 8px;
+		margin-bottom: 4vw;
 	}
 
 	.container1 img {
@@ -294,7 +293,7 @@ p {
 	}
 
 	.footer {
-margin-bottom: 8vw;
+margin-bottom: 14vw;
 	display: flex;
 	justify-content: center;
 	align-items: center;
