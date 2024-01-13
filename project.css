@@ -280,6 +280,12 @@ p {
 		flex-wrap: wrap;
 	}
 
+	#p{
+		padding: 4vw;
+		font-size: 3vw;
+		line-height: 4vw;
+	}
+
 	.project-box1 {
 		border: 8px outset rgb(37, 37, 37);
 		width: 100%;
@@ -314,7 +320,6 @@ p {
 		width: 100%;
 		display: flex;
 		flex-direction: column;
-		flex-wrap: wrap;
 	}
 
 	.header .left {
@@ -331,6 +336,7 @@ p {
 	}
 
 	.header .right {
+		padding: 8vw;
 		height: 100%;
 		width: 100%;
 		display: flex;
@@ -340,6 +346,9 @@ p {
 
 	.header .right h1 {
 		font-size: 3.5vw;
+		display: flex;
+		justify-content: center;
+		align-items: center;
 	}
 
 	#full-scr {
