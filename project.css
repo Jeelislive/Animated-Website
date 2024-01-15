@@ -238,12 +238,15 @@ html,
 
 	nav img {
 		transition: all ease 0.4s;
-		height: 11vh;
-		width: 21vh;
+		height: 15vh;
+		width: 20vh;
+		aspect-ratio: 3/2;
+		object-fit: contain;
+
 	}
 
 	nav {
-		padding: 3vw 2vw;
+		padding: 1vw 2vw;
 		background-color: #efeae3;
 	}
 
@@ -251,6 +254,7 @@ html,
 		display: none;
 	}
 	nav h3 {
+		margin-right: 4vw;
 		display: block;
 		padding: 3vw 8vw;
 		border: 1px solid black;
