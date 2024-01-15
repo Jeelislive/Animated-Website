@@ -228,8 +228,8 @@ html,
 
 	#page1 {
 		min-height: 150vh;
-		width: 100vw;
-		padding: 0 0vw;
+		width: 100%;
+		margin: 0vw;
 	}
 
 	nav h3 {
@@ -254,7 +254,7 @@ html,
 		display: none;
 	}
 	nav h3 {
-		margin-right: 4vw;
+		
 		display: block;
 		padding: 3vw 8vw;
 		border: 1px solid black;
@@ -282,6 +282,10 @@ html,
 		align-content: center;
 		flex-wrap: wrap;
 		background-color: tomato;
+	}
+
+	.project-box h4{
+		font-size: 6vw;
 	}
 
 	#p{
@@ -376,9 +380,15 @@ html,
 		justify-content: flex-end;
 		font-size: 5vw;
 		padding-right: 6vw;
-		padding-bottom: 2vw;
+		padding-bottom: 4vw;
 		align-items: end;
 		border-bottom-left-radius: 20px;
 		border-bottom-right-radius: 20px;
+	}
+
+	
+	#full-div1 a{
+		color: black;
+		text-decoration: none;
 	}
 }
