@@ -116,7 +116,7 @@ nav h3 {
 	display: flex;
 	width: 100%;
 	position: relative;
-	background-color: rgb(247, 162, 4);
+	background-color: #efe9e3;
 	margin-top: 3vw;
 }
 
@@ -276,8 +276,8 @@ html,
 	}
 
 	.container1 img {
-		height: 200px;
-		width: 200px; 
+		height: 100%;
+		width: 100%; 
 	}
 
 	.container2 {

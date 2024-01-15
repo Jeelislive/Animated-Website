@@ -115,7 +115,7 @@ nav h3 {
 .center {
 	height: 75vh;
 	width: 100%;
-	background-color: lightyellow;
+	background-color: #efe9e3;
 	display: flex;
 	align-items: flex-end;
 	justify-content: space-between;
@@ -147,11 +147,13 @@ nav h3 {
 }
 
 #page1 video {
+	padding: 0vw 2vw;
 	width: 100%;
 	margin-top: 4vw;
-	border-radius: 30px;
+	border-radius: 50px;
 	position: relative;
 }
+
 
 .hero-shape {
 	position: absolute;
@@ -285,7 +287,7 @@ nav h3 {
 	z-index: 9;
 }
 
-#page2-bottom h1 {
+#page2-bottom h2 {
 	font-size: 2vw;
 	width: 55%;
 	line-height: 4vw;
@@ -550,10 +552,16 @@ nav h3 {
 		line-height: 6vw;
 	}
 	.center h1 {
-		padding: 4vw;
+		padding: 2vw;
 		font-size: 12vw;
 		line-height: 11.5vw;
 		text-align: right;
+	}
+
+	.center h5{
+		padding: 2vw;
+		text-align: right;
+		font-size: 5vw;
 	}
 
 	#page1 video {
@@ -566,6 +574,14 @@ nav h3 {
 		height: 70vh;
 		object-fit: cover;
 	}
+
+	#page1 #videolane h3 {
+	position: relative;
+	text-align: center;
+	padding-top: 6vw;
+	font-size: 4vw;
+	z-index: 99;
+}
 
 	.hero-shape {
 		position: absolute;
@@ -679,8 +695,8 @@ nav h3 {
 		flex-direction: column;
 	}
 
-	#page2-bottom h1 {
-		font-size: 9vw;
+	#page2-bottom h2 {
+		font-size: 7vw;
 		width: 100%;
 		line-height: 9vw;
 		position: relative;
@@ -689,28 +705,30 @@ nav h3 {
 	}
 
 	#bottom-part2 {
-		margin-bottom: 12vw;
-		width: 80%;
+		width: 100%;
 		position: relative;
 		z-index: 10;
+		display: flex;
+		flex-direction: column;
 		/* background-color: aqua; */
 	}
 
 	#bottom-part2 img {
 		width: 100%;
-		border-radius: 15px;
+		align-self: center;
+		/* border-radius: 15px; */
 		margin-top: 15vw;
 	}
 
 	#bottom-part2 p {
 		font-weight: 200;
-		margin-top: 3vw;
-		margin-bottom: 8vw;
+		margin-top: 4vw;
+		/* margin-bottom: 4vw; */
 		font-size: 5vw;
 	}
 
 	#page3 {
-		padding-top: 30vw;
+		padding-top: 10vw;
 		min-height: 100%;
 		width: 100%;
 		position: relative;
