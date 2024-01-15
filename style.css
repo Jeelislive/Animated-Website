@@ -510,7 +510,7 @@ nav h3 {
 		width: 20vh;
 		aspect-ratio: 3/2;
 		object-fit: contain;
-
+		padding-right: 6vw;
 	}
 
 	nav {

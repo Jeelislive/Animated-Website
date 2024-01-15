@@ -254,7 +254,7 @@ html,
 		display: none;
 	}
 	nav h3 {
-		
+		margin-right: 2vw;
 		display: block;
 		padding: 3vw 8vw;
 		border: 1px solid black;
@@ -283,11 +283,6 @@ html,
 		flex-wrap: wrap;
 		background-color: tomato;
 	}
-
-	.project-box h4{
-		font-size: 6vw;
-	}
-
 	#p{
 		padding: 4vw;
 		font-size: 3vw;
