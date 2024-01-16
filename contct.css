@@ -132,7 +132,8 @@ nav h3 {
 .container1 img {
 	height: 300px;
 	width: 300px;
-	border: 0.1px solid black;
+	border: 5px solid orange;
+	border-radius: 50%;
 }
 
 .container2 {
@@ -141,7 +142,7 @@ nav h3 {
 	background-color: #efe9e3;
 	padding: 20px;
 	border-radius: 8px;
-	border: 0.5px solid black;
+	border: 3px solid black;
 	padding-right: 10vw;
 	margin-right: 10vw;
 	position: relative;
