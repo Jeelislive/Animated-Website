@@ -285,12 +285,7 @@ html,
 		width: 100%; 
 	}
 
-	.container2 {
-		width: 100%;
-		height: 100%;
-		/* position: relative; */
-		left: 5%;
-	}
+	
 
 	.container2 h2 {
 		color: #333;
