@@ -287,9 +287,8 @@ html,
 
 	
 
-	.container2 h2 {
-		color: #333;
-		font-size: 5vw;
+	.container2 {
+		margin: 2vw;
 	}
 
 	.footer {
